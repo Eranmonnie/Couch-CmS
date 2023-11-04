@@ -152,3 +152,29 @@ li{
     line-height: normal;
     letter-spacing: -0.42px;
 }
+
+.section-3-carousel{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.section-3-carousel-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12em;
+}
+.paragraph-center1{
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+.paragraph-center2{
+    text-align: center;
+    margin-top: 0;
+}
