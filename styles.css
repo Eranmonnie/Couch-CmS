@@ -78,8 +78,11 @@ li{
 .btn-text{
     color:var(--white);
 }
+
 .section-2{
+    margin-top: 3em;
     display: flex;
+    position: relative;
 
 }
 .section-2-word{
@@ -110,7 +113,11 @@ li{
 }
 .corn-img{
     margin-right: 1em;
-}
+    position: absolute;
+    right: 121px;
+    top: 20px;
+
+   }
 
 .section-2-final{
     display: flex;
@@ -169,6 +176,10 @@ li{
     width: 12em;
 }
 .paragraph-center1{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.42px;
     text-align: center;
     margin-top: 1.5em;
     margin-bottom: 0;
@@ -177,4 +188,11 @@ li{
 .paragraph-center2{
     text-align: center;
     margin-top: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.3px;
 }
