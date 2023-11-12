@@ -39,7 +39,7 @@ body{
 
 .main{
     padding:2% 10%;
-    background-image: url(pexels-seb-360013.jpg);
+    background-image: url("./assets/pexels-seb-360013.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -323,5 +323,5 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.7em;
 }
