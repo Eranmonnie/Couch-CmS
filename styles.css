@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&family=Roboto+Condensed&display=swap');
+
 :root {
     --navcolor: linear-gradient(180deg, #E2EEEC -1.12%, #FFF 6.76%);
     --navfont: Roboto;
@@ -7,13 +10,12 @@
     --black-1: #000;
     --white: #FFF;
     --intro-font: Montserrat;
-    --introfont-size: 40px;
-    --intro-font-style: normal;
+    --introfont-size: 48px;
     --intro-font-weight: 700;
     --content-weight: 400;
     --section-2-3-4-intro-size:28px;
     --section-2-3-4-intro-weight:700;
-    --section-2-3-4-next-size:14px;
+    --section-2-3-4-next-size:15px;
     --section-2-3-4-next-weight:400;
     --caresoul-heading-size: 14px;
     --caresoul-heading-weight: 700;
@@ -25,18 +27,37 @@
     --footer-content-weight: 400;
 }
 
+a{
+    text-decoration: none;
+}
 body{
     box-sizing: border-box;
     margin: 0;
-    padding: 0 10%;
+    
+    
 }
 
+.main{
+    padding:2% 10%;
+    background-image: url(pexels-seb-360013.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
     padding: 1em 0;
     
+}
+
+.nav-text{ 
+    list-style: none;
+    color: var(--white);
+    font-family: var(--intro-font);
+    font-size: var(--caresoul-heading-size);
+    font-weight: var(--content-weight);
+
 }
 
 .navigation{
@@ -48,12 +69,7 @@ body{
 }
 
 li{
-    list-style: none;
-    color: #000;
-    font-family: var(--navfont);
-    font-size: var(--caresoul-heading-size);
-    font-style: normal;
-    font-weight: var(--content-weight);
+   
    
 }
 
@@ -64,10 +80,9 @@ li{
     flex-shrink: 0;
 }
 .btn-login{
-    width: 100px;
-    height: 35px;
-    flex-shrink: 0;
+    padding:8px 18px;
     border-radius: 10px;
+    flex-shrink: 0;
     border: none;
     background: var(--green-1);
     display: flex;
@@ -77,21 +92,21 @@ li{
 }
 .btn-text{
     color:var(--white);
+    font-family: var(--navfont);
 }
 
 .section-2{
-    margin-top: 3em;
-    display: flex;
-    position: relative;
+    margin: 3em;
+    
 
 }
 .section-2-word{
-    width: 50%;
+    
 }
 
 .intro-text{
     font-family: var(--intro-font);
-    color: var(--black-1);
+    color: var(--white);
     font-size: var(--introfont-size);
     font-weight: var(--intro-font-weight);
     line-height: normal;
@@ -99,12 +114,14 @@ li{
 }
 
 .section-2-next{
-    width:60%;  
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .section-2-content{
-    color: var(--black-1);
-    font-family: var(--section-2-3-4-next-weight);
+    color: var(--white);
+    font-family: var(--intro-font);
     font-size: var(--section-2-3-4-next-size);
     font-style: normal;
     font-weight: var(--section-2-3-4-next-weight);
@@ -113,23 +130,22 @@ li{
 }
 .corn-img{
     margin-right: 1em;
-    position: absolute;
-    right: 121px;
-    top: 20px;
-
+   
    }
 
 .section-2-final{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap:2em;
 }
+
 .link{
     text-decoration: none;
-    color: var(--black-1);
-    font-family: var(--navfont);
+    color: var(--white);
+    font-family: var(--intro-font);
     font-size: var(--section-2-3-4-next-size);
-    font-weight:300;
+    font-weight:200;
     line-height: normal;
 }
 .heading-3{
@@ -141,19 +157,20 @@ li{
 
 .section-3{
     margin-top: 4em;
+   
 }
 .section-3-header{
     margin: 0;
-    color: #000;
+    color: var(--white);
     font-family: var(--intro-font);
     font-size: var( --section-2-3-4-intro-size);
     font-weight: var( --section-2-3-4-intro-weight);
     
 }
 .section-3-header-content{
-    color: #000;
+    color: var(--white);
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -161,6 +178,9 @@ li{
 }
 
 .section-3-carousel{
+    padding: 3em;
+    border-radius: 50px 50px 50px 5px;
+    background-color: var(--green-2);
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -177,22 +197,131 @@ li{
 }
 .paragraph-center1{
     font-size: 14px;
-    font-weight: 700;
+    font-family: var(--intro-font);
+    font-weight: 500;
     line-height: normal;
     letter-spacing: -0.42px;
     text-align: center;
     margin-top: 1.5em;
     margin-bottom: 0;
+    color: var(--white);
 }
 
 .paragraph-center2{
     text-align: center;
     margin-top: 0;
     color: #000;
-    font-family: Montserrat;
+    font-family: var(--intro-font);
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500px;
     line-height: normal;
     letter-spacing: -0.3px;
+    color: var(--white);
+}
+
+.section-4-5-background{
+    /* background: url(pexels-math-21393.jpg); */
+    /* background: #57635b; */
+}
+.section-4{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+
+}
+.section-4-edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.images{
+        
+}
+
+
+.section-4-main{
+    font-family: var(--navfont);
+    padding: 3em 10%; 
+    background: linear-gradient(180deg, #E2EEEC -1.12%, #FFF 6.76%);    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-4-words{
+    width: 40%;
+    
+}
+.section-4-final{
+    display: flex;
+    align-items: center;
+    
+    gap:2em;
+}
+.button11{
+    margin-top: 2em;
+}
+.button1{
+    padding:8px 18px;
+    border-radius: 10px;
+    border: 1px solid var(--green-1);
+    background: var(--green-2);
+}
+
+.button2{
+    padding:8px 18px;
+    border-radius: 10px;
+    background: var(--green-1);
+}
+
+.button1-color{
+    color: var(--footer-header-color);
+    font-family: var(--navfont);
+    font-size: 14px;
+}
+.button12{
+    margin-top: 2em;
+}
+.button-2{
+    padding:8px 18px;
+    border-radius: 10px;
+    background: var(--green-1);
+    font-family: var(--navcolor);
+}
+
+.button2-color{
+    color: var(--white  );
+    font-family: var(--navfont);
+    font-size: 14px;
+}
+.section-5-main{
+    padding: 0 10%;
+}
+.section-5{
+    
+    height: 237px;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    padding: 3em;
+    border-radius: 50px 50px 50px 5px;
+    background: #1C3A27;
+    margin-bottom: 10em;
+}
+.section-5-words{
+    font-family: var(--navfont);
+    width: 90%;
+}
+.manimg{
+    width: 268px;
+    height: 395px;
+    flex-shrink: 0;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
 }
