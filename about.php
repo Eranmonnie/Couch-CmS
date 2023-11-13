@@ -1,3 +1,12 @@
+<?php
+require_once ('couch/cms.php');
+?>
+
+<cms:template title='Home' icon='home'>
+    <cms:editable name="body" label="Body" type="richtext" />
+    <cms:editable name="excerpt" label="Excerpt" type="textarea" />
+</cms:template>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +24,9 @@
             <div class="logo"><img src="./assets/Rayvalley favicon 1.png"></div>
             <div>
                 <ul class="menu-bar">
-                    <li><a>Home</a></li>
-                    <li class="current"><a>About</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li class="current"><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
             <div class="mini-bar">
@@ -28,10 +37,10 @@
                         <input type="checkbox" id="checkbox_toggle" style="display: none;"/>
                         <div>
                             <ul class="menu-bar">
-                                <li class="current"><a>Home</a></li>
+                                <li ><a href="farm.php">Home</a></li>
                                 <li><a>Product</a></li>
-                                <li><a>About</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="about.php" class="current">About</a></li>
+                                <li><a href="contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </label>
@@ -126,3 +135,7 @@
     </div>
 </body>
 </html>
+
+<?php
+COUCH::invoke();
+?>

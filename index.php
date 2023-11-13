@@ -13,6 +13,7 @@ require_once ('couch/cms.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="general_style.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,9 +23,9 @@ require_once ('couch/cms.php');
     <div class="nav">
         <a href="#"><img src="./assets/Rayvalley favicon 1.png" alt="logo" class="logo"></a>
         <ul class="navigation">
-            <a href="#"><li class="nav-text">Home</li></a>
-            <a href="#"><li class="nav-text">About</li></a>
-            <a href="#"><li class="nav-text">Contact Us</li></a>
+            <a href="index.php"><li class="nav-text" class="current">Home</li></a>
+            <a href="about.php"><li class="nav-text">About</li></a>
+            <a href="contact.php"><li class="nav-text">Contact Us</li></a>
             
         </ul>
         <div class="section-2-final">

@@ -55,9 +55,18 @@ body{
     list-style: none;
     color: var(--white);
     font-family: var(--intro-font);
-    font-size: var(--caresoul-heading-size);
+    font-size: 1em;
     font-weight: var(--content-weight);
 
+}
+.nav-text:hover{
+    color: var(--lightning-color);
+    text-shadow: 0px 0px 10px var(--lightning-color),
+                 0px 0px 20px var(--lightning-color),
+                 0px 0px 40px var(--lightning-color),
+                 0px 0px 80px var(--lightning-color),
+                 0px 0px 120px var(--lightning-color),
+                 0px 0px 160px var(--lightning-color);
 }
 
 .navigation{
@@ -90,6 +99,7 @@ li{
     justify-content: center;
     text-decoration: none;
 }
+
 .btn-text{
     color:var(--white);
     font-family: var(--navfont);
